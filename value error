@@ -1,0 +1,15 @@
+# def cube(x):
+#     if x<0:
+#         raise ValueError("input can not be negative")
+#     else:
+#         return x ** 3
+# print(cube(-2))
+
+total_balance=3000
+def withdraw(y,x):
+    if x<0:
+        raise ValueError("negative amount can not be withdraw")
+
+    else:
+        return total_balance-x
+print(withdraw(total_balance,0))

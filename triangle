@@ -1,0 +1,8 @@
+def triangle(x,y,z):
+    
+    if x+y+z == 180:
+        print("it is valid")
+    else:
+        print("it is invalid")
+
+triangle(60,60,60)

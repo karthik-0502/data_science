@@ -1,0 +1,12 @@
+#create , access , update, delete
+cities=["vizag", "delhi", "nellore", "hyderbad", "gajuwaka", "akp"]
+print(type(cities))
+print(cities[1])
+print(cities[-4])
+print(cities[1:])
+print(cities[:3])
+print(cities[2:4])
+print(cities[1::2])
+print(cities[::4])
+print(cities[::3])
+print(cities[::(len(cities)-2)+1])

@@ -1,0 +1,7 @@
+mobile_sales=10000
+total_sales=0
+try:
+    team_percent=mobile_sales/total_sales
+except:
+    print("invalid total sales value")
+

@@ -1,0 +1,13 @@
+import math 
+def near(x1,y1,x2,y2):
+    p1 = (x1,y1)
+    d1 = (x2,y2)
+    radius = 7000
+    dx = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+    print("the distance is: ", dx)
+    if dx >= radius:
+        return "your order is placed"
+    else:
+        return "it is too far from your place"
+    
+near(1,1,6,7)

@@ -1,0 +1,4 @@
+import distance
+print(distance.fun_dist(5,2,3,2))
+import distance
+print(distance.fun_man(5,2,3,2))

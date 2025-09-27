@@ -1,0 +1,7 @@
+L1_ =[1,2,5,7,10]
+L2_ = [8,12,9,20,50]
+result = []
+for i in range(len(L1_)):
+    result.append(L1_[i] + L2_[i])
+
+print (result)

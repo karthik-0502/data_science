@@ -1,0 +1,9 @@
+cities_ = ['Kphb', 'Erragada', 'Ameerpeta']
+#lower=[]
+#for i in cities_:
+ #     lower.append(i.lower())
+#print(lower)
+
+
+lower = [i.lower() for i in cities_]
+print(lower)

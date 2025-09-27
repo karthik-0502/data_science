@@ -1,0 +1,49 @@
+# write a function which should take password as a input and find it is a valid password by following rules 
+# rules 
+# 8 char
+# it should be mix of alpha and num
+# it should contain atlest 1 special char
+# it should not have spaces,
+# it should cotain upper case and lower case
+
+
+import string
+
+def is_valid_password(password):
+    # Rule 1: Check length
+    if len(password) < 8:
+        return False, "Password must be at least 8 characters long."
+
+    # Rule 2: Check for spaces
+    if ' ' in password:
+        return False, "Password must not contain spaces."
+
+    # Rule 3: Check for at least one digit
+    if not any(char.isdigit() for char in password):
+        return False, "Password must include at least one number."
+
+    # Rule 4: Check for at least one special character
+    special_chars = string.punctuation
+    if not any(char in special_chars for char in password):
+        return False, "Password must include at least one special character."
+
+    # Rule 5: Check for at least one uppercase letter
+    if not any(char.isupper() for char in password):
+        return False, "Password must include at least one uppercase letter."
+
+    # Rule 6: Check for at least one lowercase letter
+    if not any(char.islower() for char in password):
+        return False, "Password must include at least one lowercase letter."
+
+    # Rule 7: Check for at least one letter (redundant if upper/lower passed, but good to include)
+    if not any(char.isalpha() for char in password):
+        return False, "Password must include at least one alphabet character."
+
+    return True, "Password is valid."
+
+# Example usage:
+password = input("Enter your password: ")
+valid, message = is_valid_password(password)
+print(message)
+
+

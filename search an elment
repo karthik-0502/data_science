@@ -1,0 +1,7 @@
+cities=["vizag", "delhi", "nellore", "hyderbad", "gajuwaka", "akp"]
+ 
+user_1 = input("enetr the city name: ")
+if cities.count(user_1) >0:
+    print("it is there in the list")
+else:
+    print('it is not there')

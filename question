@@ -1,0 +1,15 @@
+# input [[10,20,30],50,[20,10],[20]]  output [10,20,30,50,20,10,20]
+
+num = [[10, 20, 30], 50,'sai karthik', [20, 10], [20]]
+output = []
+for i in num:
+    if type(i)== int:
+        output.append(i)
+        if type(i)== str:
+            output.append(i)
+    else:
+        for j in i:
+            output.append(j)
+
+print(output)
+

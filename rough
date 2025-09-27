@@ -1,0 +1,6 @@
+# 1.write a program to take input from the user and display its data type.....
+
+user_input = 12
+print("the users input is: ", user_input)
+print("................")
+print("the data type is: ", type(user_input))

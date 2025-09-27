@@ -1,0 +1,5 @@
+cities=["Venice", "Tokyo","Delhi", "Dubai", "Chennai","Bengaluru","Munich"]
+try:
+    print(cities[1])
+except:
+    print("range out of list")

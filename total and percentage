@@ -1,0 +1,15 @@
+#student Deatils
+Student_Name= (input("Enter the Student Name: "))
+print("Name of the student is:", Student_Name)
+a = int(input ("Enter Telugu marks: "))
+b = int(input ("Enter English marks: "))
+c = int(input ("Enter Hindi marks: "))
+d = int(input ("Enter Mathematics marks: "))
+e = int(input ("Enter Science marks: "))
+f = int(input ("Enter Social marks: "))
+#Total and Percentage
+Total_marks= a+b+c+d+e+f
+percentage = (Total_marks*100)/600
+print("The Total marks out of 600 is:",Total_marks)
+print("The percentage of the student is:",percentage)
+print("CONGRATULATIONS", Student_Name)
