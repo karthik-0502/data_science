@@ -1,5 +1,8 @@
-list = [29,30,3,33,44,23]
-smalest_num = min(list)
-largest_num = max (list)
-print(f'the smalest num is: {smalest_num}')
-print(f'the largest num is: {largest_num}')
+def list():
+    smalest_num = min(list)
+    largest_num = max (list)
+    if smalest_num:
+        return f'the smalest num is: {smalest_num}'
+    else:
+        return f'the largest num is: {largest_num}'
+    
