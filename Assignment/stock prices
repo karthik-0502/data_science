@@ -1,0 +1,9 @@
+def calculate_average_price(prices):
+    if not prices:
+        return 0  
+    return sum(prices) / len(prices)
+daily_prices = [148.25, 150.10, 152.85, 149.90, 151.40]
+average_price = calculate_average_price(daily_prices)
+
+
+print(f"Average Stock Price: ${average_price:.2f}")
