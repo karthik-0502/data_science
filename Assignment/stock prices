@@ -7,3 +7,4 @@ average_price = calculate_average_price(daily_prices)
 
 
 print(f"Average Stock Price: ${average_price:.2f}")
+

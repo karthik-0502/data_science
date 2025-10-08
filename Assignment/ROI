@@ -12,7 +12,7 @@ def calculate_roi(starting_prices, final_prices):
         roi = ((final - starting) / starting) * 100
         total_roi = total_roi + roi
     average_roi = total_roi / num_stocks
-    print("Average ROI:", round(average_roi, 3),"%")
+    print("Average ROI:", round(average_roi, 2),"%")
 
 # Example input
 starting_prices = [100, 120, 130]
