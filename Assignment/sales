@@ -1,0 +1,19 @@
+# Function to calculate average sales
+def calculate_average_sales(sales):
+    if len(sales) == 0:
+        print("No sales data available.")
+        return 0 
+    total_sales = 0
+    number_of_months = len(sales)
+    for sale in sales:
+        total_sales += sale
+    average_sales = total_sales / number_of_months
+    
+    return average_sales
+
+# Example sales data for past months
+past_sales = [1200, 1500, 1300, 1700, 1600]
+
+# Calculate and print
+predicted_sales = calculate_average_sales(past_sales)
+print("Predicted sales for next month:", round(predicted_sales, 2))
