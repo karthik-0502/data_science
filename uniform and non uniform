@@ -1,0 +1,17 @@
+def motion_type(distances, times):
+   
+    if len(distances) != len(times):
+        return "Error: Distances and times lists must be of equal length."
+    speeds = [d / t if t != 0 else None for d, t in zip(distances, times)]
+    if None in speeds:
+        return "Error: Time interval cannot be zero."
+
+    if all(speed == speeds[0] for speed in speeds):
+        return "Uniform Motion"
+    else:
+        return "Non-Uniform Motion"
+
+
+distances = [10, 20, 30]
+times = [2, 4, 6]
+print(motion_type(distances, times))
